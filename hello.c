@@ -1,6 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
-  printf("hi");
-  return 0;
+
+
+  char *name = getenv("USER");	
+  printf("hi %s\n", name);
+  
+  return EXIT_SUCCESS;
 }
